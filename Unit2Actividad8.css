@@ -1,0 +1,26 @@
+.efectoMenu{
+    height:75%;
+    font-size:75%;
+    transition: height 0.75s, font-size 0.75s;
+}
+
+.efectoMenu:hover{
+    height: 125%;
+    font-size:125%;
+}
+
+.efectoMenu a {
+    text-decoration: none;
+}
+
+.transicionMenu{
+    background-color: limegreen;
+    height: 30px; width:75 px;
+    border: 1px solid black;
+    transition: height 0.75s, width 0.75s;
+}
+
+div:hover{
+    background-color: deepskyblue;
+    height: 50px; width: 150px;
+}
