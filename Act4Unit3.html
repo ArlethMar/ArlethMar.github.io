@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <head lang="es">
+    <title>unidad 3 | actividad 4</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset = "utf - 8"/>
+    <meta name="Autor" content="Arleth Guevara Mar">
+    <meta name="Fecha" content="07/05/2025">
+    <meta name="Descripción" content="JavaScript">
+    <style>
+        i {text-transform: uppercase; color: white; background-color: navy;}
+    </style>
+  </head>
+  <body>
+    <h1>unidad 3 | actividad 4 :: Tema(JavaScript)</h1>
+    <ol>
+      <li id="val1"><strong>UPSLP</strong></li>
+      <li id="val2"></li><li id="val3"></li><li id="val4"></li><li id="val5"></li><li id="val6"></li>
+      <li id="val7"><strong>ITESM(<i>Campus San Luis Potosí</i>)</strong></li>
+      <li id="val8"></li><li id="val9"></li><li id="val10"></li>
+    </ol>
+    <script>
+       //Asignar contenido
+       document.getElementById("val2").textContent = 'UCEM';
+       //recuperar contenido
+       let vartTem = document.getElementById("val1").textContent;
+       document.getElementById("val3").textContent = vartTem + "! ! !";
+       //textContent
+       vartTem = document.getElementById("val7").textContent;
+       document.getElementById("val3").textContent = vartTem;
+       //innertText
+       vartTem = document.getElementById("val7").innerText;
+       document.getElementById("val9").innerText = vartTem;
+       //innertHTML
+       vartTem = document.getElementById("val7").innerHTML;
+       document.getElementById("val10").innerHTML = vartTem;
+    </script>
+  </body>
+</html>

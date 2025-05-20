@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <head lang="es">
+    <title>unidad 3 | actividad 3</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset = "utf - 8"/>
+    <meta name="Autor" content="Arleth Guevara Mar">
+    <meta name="Fecha" content="28/04/2025">
+    <meta name="Descripción" content="Alert, confirm y Prompt">
+  </head>
+  <body>
+    <h1>unidad 3 | actividad 3 :: Tema(Alert, confirm y Prompt)</h1>
+    <script>
+        let opc = window.prompt("Menú de opciones:\n 1.- Sumar\n 2.- Restar\n 3.- Multiplicar\n 4.- Dividir\n Qué opción deseas?:");
+        let val1 = window.prompt("Dame el primer valor");
+        let val2 = window.prompt("Dame el segundo valor");
+        switch (opc)
+        {
+            case "1": //Sumar
+            document.write("<h3>operación Suma</h3>");
+            document.write("<code>" + val1 + "+" + val2 + "=" + (val1+val2) + "</code>");
+            break;
+
+            case "2": //Restar
+            document.write("<h3>operación Resta</h3>");
+            document.write("<code>" + val1 + "-" + val2 + "=" + (val1-val2) + "</code>");
+            break;
+
+            case "3": //Multiplicar
+            document.write("<h3>operación Multiplicar</h3>");
+            document.write("<code>" + val1 + "×" + val2 + "=" + (val1*val2) + "</code>");
+            break;
+
+            case "3": //Dividir
+            document.write("<h3>operación División</h3>");
+            document.write("<code>" + val1 + "÷" + val2 + "=" + (val1/val2) + "</code>");
+            break;
+        }
+
+    </script>
+  </body>
+</html>
