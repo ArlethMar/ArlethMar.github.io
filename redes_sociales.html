@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Redes Sociales</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap" rel="stylesheet"><!--estilos.css-->
+  <!-- CSS Estilos -->  
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <link rel="stylesheet" href="redes_sociales.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  .card.tiktok {
+  border-left: 5px solid #25F4EE; /* Color TikTok */
+}
+
+.card.youtube {
+  border-left: 5px solid #FF0000; /* Color YouTube */
+}
+</style>
+</head>
+<body>
+  <header class="gooey-nav-container">
+    <nav>
+      <ul id="gooey-nav">
+        <li class="active" onclick="activate(this)"><a href="index.html">Inicio</a></li>
+        <li onclick="activate(this)"><a href="about.html">Referencias</a></li>
+        <li onclick="activate(this)"><a href="contact.html">Sesión</a></li>
+        <li onclick="activate(this)"><a href="recetario.html">Recetario</a></li>
+        <li onclick="activate(this)"><a href="redes_sociales.html">Redes Sociales</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<div class="social-section">
+    <div class="description">
+      <h1>Redes Sociales</h1>
+      <p>Estas son algunas publicaciones destacadas en redes como Twitter, Instagram y Facebook.</p>
+    </div>
+
+    <div class="cards-container">
+      <!-- Twitter -->
+      <div class="card twitter">
+        <div class="header">
+          <img src="https://pbs.twimg.com/profile_images/1397909088982421505/hUoJkMFk_400x400.jpg" alt="Avatar">
+          <div>
+            <strong>1000 Recetas de Cocina</strong>
+            <span>@Recetas1000</span>
+          </div>
+          <i class="fa-solid fa-xmark close"></i>
+        </div>
+         <!--Así es como al hacer click en la imagen te manda a la red social--> 
+        <a href="https://x.com/cocinarrecetas/status/1111840694442823680">
+          <img src="https://pbs.twimg.com/card_img/1926595707797942272/UPXzesPy?format=jpg&name=small" alt="Post Image" class="post-image">
+
+        </a>
+
+        <div class="info">
+          <span>5:50 p. m. · 20 jul. 2017</span>
+        </div>
+        <div class="actions">
+          <span><i class="fa-solid fa-heart"></i> 1,1 M</span>
+          <span><i class="fa-regular fa-comment"></i> Responder</span>
+          <span><i class="fa-solid fa-link"></i> Copia enlace</span>
+        </div>
+        <a class="replies" href="#">Leer 14,3 mil respuestas</a>
+      </div>
+
+      <!-- Instagram -->
+      <div class="card instagram">
+        <div class="header">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRejioEBbUM-bBl9eW8d7Qvy43wtXhVLgQxdQ&s" alt="Avatar">
+          <div>
+            <strong>@postreperfect</strong>
+            <span>Instagram</span>
+          </div>
+          <i class="fa-solid fa-xmark close"></i>
+        </div>
+
+        <a href="https://www.instagram.com/p/BZO6TGnlU0r/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
+          <img src="https://scontent.fslp3-1.fna.fbcdn.net/v/t39.30808-6/464621148_8970592196318920_1148977593196324186_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0b6b33&_nc_eui2=AeEwD6fwrFmGedK86iauXYZp6uMf27608zjq4x_bvrTzOAzraevjjKRbyCNdFkbwNJEoC24xXEnEM734r50l1hy-&_nc_ohc=qvL8boSK3qQQ7kNvwG6nshM&_nc_oc=AdlXyhkb_9bWX0NjqOdOHxUAn7_j-Png9LFkenrhP_F5V6HsuLvHjMs6n_DcBEndESa28AsP8FuIIY05wURuZNC0&_nc_zt=23&_nc_ht=scontent.fslp3-1.fna&_nc_gid=kdoA6i6PYyaOcp-HkBpSjQ&oh=00_AfKmaY86Io5YSGhQeK7-HcGeOdslBcQGS0BCmormiX2lWQ&oe=68322996" alt="Post Image" class="post-image">
+
+        </a>
+        <div class="info">
+          <span>Publicado el 10 feb. 2023</span>
+        </div>
+        <div class="actions">
+          <span><i class="fa-solid fa-heart"></i> 894k</span>
+          <span><i class="fa-regular fa-comment"></i> 3.2k</span>
+          <span><i class="fa-solid fa-share"></i> Compartir</span>
+        </div>
+      </div>
+
+      <!-- Facebook -->
+      <div class="card facebook">
+        <div class="header">
+          <img src="https://scontent.fslp3-1.fna.fbcdn.net/v/t39.30808-1/327390130_611055504176347_4176710473709560489_n.png?stp=dst-png_s200x200&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_eui2=AeEg0K05mb8xbyj-HzrGQ93uiTd-Lw6-IxCJN34vDr4jEEBWF_ecYtfwmR1V3Gf7X_ubuXyZRylFbtSpzV-QrEi_&_nc_ohc=9XMo9QlWI6MQ7kNvwEKukaC&_nc_oc=Adm2kdY6ka4-YmGK5dYxEdiK3Q7rVJ6K7M4M8_xNfJYdTON4Pn17q9_X5fybno-li7MQQGiq4j4Rdjg-fvL_4KmT&_nc_zt=24&_nc_ht=scontent.fslp3-1.fna&_nc_gid=Q3EB3VeoCuC5BqrEPXj_iw&oh=00_AfLI6ITobpDSgCFNr4NGvbqKqYq63bvYqpchAcpeeoIREw&oe=6832205F" alt="Avatar">
+          <div>
+            <strong>Recetas de postres </strong>
+            <span>Facebook</span>
+          </div>
+          <i class="fa-solid fa-xmark close"></i>
+        </div>
+
+        <a href="https://www.facebook.com/share/p/15NtfidrLz/">
+          <img src="https://scontent.fslp3-1.fna.fbcdn.net/v/t39.30808-6/486099323_1979981312488447_557914306199326491_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeF9ID6lfaZL3MA67kqAUaHTUEDa4fIpwHZQQNrh8inAduoi12aYSLyXRWOiAP-RpvjGYJ-b1nMQasPhj3IKwed6&_nc_ohc=2leIPoYwQI0Q7kNvwErGst_&_nc_oc=AdmA7R3RAuodA-uva3cJFfaG81GV3mYGXz0RmBXHnW_d3rMb0XsatP9dUBSCxEpuRMDlJGastk-hZZMLXcRQkK4y&_nc_zt=23&_nc_ht=scontent.fslp3-1.fna&_nc_gid=q0tf_j7k9vIB4eJnEQGgIw&oh=00_AfIZHOvyghRIaTe6DijCeI_UkjTq_IvxbITwwXjln_Th0Q&oe=683220A1" alt="Post Image" class="post-image">
+
+        </a>
+        <div class="info">
+          <span>Publicado el 15 mar. 2024</span>
+        </div>
+        <div class="actions">
+          <span><i class="fa-solid fa-thumbs-up"></i> 2M</span>
+          <span><i class="fa-regular fa-comment"></i> 8k</span>
+          <span><i class="fa-solid fa-share"></i> Compartir</span>
+        </div>
+      </div>
+
+      <!-- TikTok -->
+<div class="card tiktok">
+  <div class="header">
+    <img src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/9d67648b71d4c92872732a73a781f0f7~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=00a47431&x-expires=1748599200&x-signature=XsnxwR8yfD%2B3T%2F86PxcF430G0Zg%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=b59d6b55&idc=maliva" alt="Avatar">
+    <div>
+      <strong>jazzy.leon</strong>
+      <span>@jazzy.leon</span>
+    </div>
+    <i class="fa-solid fa-xmark close"></i>
+  </div>
+  <a href="https://www.tiktok.com/@jazzy.leon/video/7326937481494957343?is_from_webapp=1&sender_device=pc" target="_blank">
+    <img src="https://midwestfoodieblog.com/wp-content/uploads/2023/07/chicken-alfredo-1-2.jpg" alt="TikTok Video" class="post-image">
+  </a>
+  <div class="info">
+    <span>Publicado el 12 may. 2023</span>
+  </div>
+  <div class="actions">
+    <span><i class="fa-solid fa-heart"></i> 850 K</span>
+    <span><i class="fa-regular fa-comment"></i> 3200</span>
+    <span><i class="fa-solid fa-share-nodes"></i> Compartir</span>
+  </div>
+  <a class="replies" href="#">Ver comentarios</a>
+</div>
+
+<!-- YouTube -->
+<div class="card youtube">
+  <div class="header">
+    <img src="https://yt3.ggpht.com/jjIQ9dGpwaDmdQudejcpOynCzF5HHIQsr_V9eeQk-VyZxxjKkontayhDaAZHrTUsp4JlA3rZ=s48-c-k-c0x00ffffff-no-rj" alt="Avatar">
+    <div>
+      <strong>Recetas Nestlé</strong>
+      <span>@recetasnestle</span>
+    </div>
+    <i class="fa-solid fa-xmark close"></i>
+  </div>
+  <a href="https://youtu.be/NiMitn9Mh7E?si=S7klWvN9Da3F8oPu" target="_blank">
+    <img src="data:image/jpeg;base64,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" alt="YouTube Video" class="post-image">
+  </a>
+  <div class="info">
+    <span>Publicado el 8 abr. 2022</span>
+  </div>
+  <div class="actions">
+    <span><i class="fa-solid fa-thumbs-up"></i> 2,4 M</span>
+    <span><i class="fa-regular fa-comment"></i> 13,500</span>
+    <span><i class="fa-solid fa-share-nodes"></i> Compartir</span>
+  </div>
+  <a class="replies" href="#">Ver todos los comentarios</a>
+</div>
+
+
+    </div>
+  </div>
+
+  <script>
+    function activate(element) {
+      const items = document.querySelectorAll('#gooey-nav li');
+      items.forEach(i => i.classList.remove('active'));
+      element.classList.add('active');
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
